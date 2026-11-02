@@ -62,7 +62,7 @@ function Result() {
     const saveResult = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/quiz-results",
+          "http://https://online-quiz-assessment-api.onrender.com/api/quiz-results",
           {
             method: "POST",
             headers: {
