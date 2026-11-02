@@ -1,3 +1,4 @@
+
 const dns = require("dns");
 dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
@@ -5,12 +6,12 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 
+dotenv.config();
+
 const connectDB = require("./config/db");
 const codeRoutes = require("./routes/codeRoutes");
 const authRoutes = require("./routes/authRoutes");
 const quizResultRoutes = require("./routes/quizResultRoutes");
-
-dotenv.config();
 
 connectDB();
 
@@ -37,6 +38,6 @@ app.use("/api/quiz-results", quizResultRoutes);
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
 });
