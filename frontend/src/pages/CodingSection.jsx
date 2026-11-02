@@ -178,7 +178,7 @@ function CodingSection() {
 
     try {
       const response = await fetch(
-        "http://https://online-quiz-assessment-api.onrender.com/api/code/execute",
+        "https://online-quiz-assessment-api.onrender.com/api/code/execute",
         {
           method: "POST",
 

@@ -54,7 +54,7 @@ function Login() {
     try {
       if (isRegister) {
         const response = await fetch(
-          "http://https://online-quiz-assessment-api.onrender.com/api/auth/register",
+          "https://online-quiz-assessment-api.onrender.com/api/auth/register",
           {
             method: "POST",
             headers: {
@@ -87,7 +87,7 @@ function Login() {
       }
 
       const response = await fetch(
-        "http://https://online-quiz-assessment-api.onrender.com/api/auth/login",
+        "https://online-quiz-assessment-api.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {

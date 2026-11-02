@@ -24,7 +24,7 @@ function Dashboard() {
 
       try {
         const response = await fetch(
-          `http://https://online-quiz-assessment-api.onrender.com/api/quiz-results/${encodeURIComponent(
+          `https://online-quiz-assessment-api.onrender.com/api/quiz-results/${encodeURIComponent(
             loggedInEmail
           )}`
         );
